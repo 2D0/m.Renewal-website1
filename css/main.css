@@ -90,8 +90,8 @@
     display:none;
 }
 #header .gnb .gnbLogo{
-    padding-top:23px;
-    margin-bottom:23px;
+    padding-top:18px;
+    margin-bottom:18px;
     text-align:center;
 }
 #header .gnb .close{
@@ -99,7 +99,7 @@
     width:45px;
     height:45px;
     position:absolute;
-    top:24.5px;
+    top:19.5px;
     left:20px;
 }
 #header .gnb .close span{
@@ -159,7 +159,7 @@
     background:#3a8dcb;
     line-height:58px;
     text-align:center;
-    margin:30px auto 0 auto;
+    margin:15px auto 0 auto;
 }
 #header .gnb .login a{
     display:block;
