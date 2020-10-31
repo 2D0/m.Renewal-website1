@@ -82,7 +82,7 @@
     height:100%;
     position:fixed;
     top:0;
-    right:0;
+    right:-400px;
     z-index:500;
     border:6px solid #045ea1;
 }
