@@ -1,57 +1,21 @@
-$('#mainSlider ul').bxSlider({
-  auto: true,
-  controls: false,
-  autoControls: false,
-  stopAutoOnClick: true,
-  pager: true,
-});
+/* $('#diane').addClass('animate');
 
 
-$(".btnMenu").click(function(){
-   $(".gnb").animate({
-        right:0
-   },300);
-});
-$(".gnb .close").click(function(){
-    $(".gnb").animate({
-        right:-400
-    },300);
-});
+$(function(){
 
+  var $container = $('.container');
+  var $offset = 300;
+  var $containerOST = $container.offset().top - $offset;
 
-
-    $(".gnb li .m").click(function(){
-
-    var tg=$(this).siblings(".gnb .sub");
-
-    var dis=tg.css("display");
-
- 
-
-    if(dis=="block"){
-
-        $(this).removeClass("on");
-
-        tg.slideUp(300);
-
+  $(window).scroll(function(){
+    if($(this).scrollTop() > $containerOST) {
+      $container.find('#diane').addClass('animate');
     }
+  });
 
- 
 
-    if(dis=="none"){
-
-        $("#header .gnb li .m").removeClass("on");
-
-        $(this).addClass("on");
-
-        $(".gnb li .sub").slideUp(300);
-
-        tg.slideDown(300);
-
-    };
-
-    
-
-    return false;
-
-}); 
+});
+ */
+/* window.addEventListener('load', function(event){
+  AOS.init();
+}}; */
