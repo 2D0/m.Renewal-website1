@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>성실한 웹퍼블리셔 이다영입니다.</title>
 
-    <!-- 뷰포트 반응형 -->
+    <!-- 반응형 뷰포트 -->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     
     <link href="css/reset.css" rel="stylesheet">
@@ -22,7 +22,9 @@
     
     <script src="js/main.js"></script>
 </head>
-<body>
+<body> 
+
+<div class="mouse"><img src="img/cursor.png"></div>
 
 <div class="pager top"></div><!--.pager.top-->
 <header id="header">
@@ -147,6 +149,7 @@
                 </div><!--.inner-->
             </section><!--.introduce-->
             <section class="skill_list">
+                <h2>My skill fruits</h2>
                 <div class="inner">
                     <ul class="clearfix">
                         <li class="fruit1">
@@ -301,7 +304,7 @@
             <section class="work_list">
                 <div class="inner">
                     <div class="top_title" id="wow_close">
-                        <h1>My work web slite list (click)</h1>
+                        <h2>My work web site</h2>
                     </div><!--top_title-->
             
                     <div class="tab_menu">
@@ -680,7 +683,34 @@
     AOS.init(
 
     );
-  </script>
+</script>    
+    <script src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+    <script>
+
+    
+      // --------클릭시 반짝이 모션
+      var first = new mojs.Shape({
+          shape:'circle', //동그라미
+          left:0, top:0, //위치
+          radius:{0:40}, //안쪽 동그라미 크기
+          fill:'none', //동그라미 색상
+          stroke:'#fafafa', //바깥 선 컬러
+          strokeWidth:{45:0}, //바깥 동그라미 선 굵기
+      });
+      var second = new mojs.Shape({
+          shape:'circle',
+          parent:first.el,
+          radius:{0:50},
+          stroke:'#2d0',
+          strokeWidth:{20:0}
+      });
+      document.addEventListener('click', function(e){
+          first.tune({x:e.pageX, y:e.pageY}).replay();
+      })
+
+
+
+    </script>
 </body>
 </html>
 
